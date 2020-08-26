@@ -2,19 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/main.scss';
 import './styles/flexboxgrid.min.css';
-import Home from './Home';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter} from 'react-router-dom';
+
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <div class="row">
       <div class="col-lg-2"></div>
       <div class="col-lg-10">
-        <Home />
+        <App />
       </div>
       <div class="col-lg-2"></div>
     </div>
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
