@@ -4,10 +4,13 @@ import About from './pages/about';
 import Home from './pages/home';
 import Projects from './pages/projects';
 import Resume from './pages/resume';
+import Navigation from './components/navigation';
 
 
 function App() {
   return (
+    <div>
+    <Navigation />
     <main>
       <Switch>
           <Route path="/" component={Home} exact />
@@ -16,6 +19,7 @@ function App() {
           <Route path ="/resume" component={Resume} />
       </Switch>
     </main>
+    </div>
   );
 }
 

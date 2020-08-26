@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+$main: #3a3a3a;
+$accent: #004c21;
+
+main {
+  margin-top: 4rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 8rem;
+}
+
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: $main;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.is-active {
+  color: $accent;
+}
