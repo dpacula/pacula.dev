@@ -12,6 +12,33 @@ code {
     monospace;
 }
 
+$breakpoints: ('xs': 30em,
+  'sm': 48em,
+  'md': 64em,
+  'lg': 75em) !default;
+
+/// Mixin to manage responsive breakpoints
+/// @author Hugo Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin respond-to($breakpoint) {
+
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+
+    // Prints a media query based on the value
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+    +"Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
 $main: #3a3a3a;
 $accent: #004c21;
 
@@ -25,6 +52,13 @@ header {
   height: 8rem;
 }
 
+h1 {
+  line-height: 1.6;
+  letter-spacing: 1.2;
+}
+
+
+
 nav a {
   margin-right: 10px;
   text-decoration: none;
@@ -37,4 +71,79 @@ nav a {
 
 .is-active {
   color: $accent;
+}
+
+.main-header {
+  height: 20rem;
+}
+
+.main-header-img {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.top {
+  @include respond-to('md') {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.bottom {
+  @include respond-to('md') {
+    margin-top: 320px;
+    h1 {
+      font-size: 1.75em;
+    }
+  }
+}
+
+.quick-sell-container-header {
+  margin-bottom: 25px;
+  h2 {
+    color: $accent;
+    font-weight: 300;
+    letter-spacing: .2em;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 2;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.quick-sell-subc {
+  padding: 10px 0px;
+  border-bottom: 1.25px solid rgba(138, 179, 138, 0.9);
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      margin: none;
+      font-size: 1.1em;
+    }
+  }
+
+  h3 {
+    margin: 5px 0 0 0;
+    letter-spacing: .05em;
+    font-size: 1.5em;
+  }
+
+  &:hover {
+    background-color: rgba(138, 179, 138, 0.9);
+    border-bottom: 1.25px solid  rgba(138, 179, 138, 0.9);
+
+    h3 {
+      color: $accent;
+    }
+  }
+
 }
