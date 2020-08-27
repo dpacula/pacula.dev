@@ -1,17 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 $breakpoints: ('xs': 30em,
   'sm': 48em,
   'md': 64em,
@@ -41,6 +27,35 @@ $breakpoints: ('xs': 30em,
 
 $main: #3a3a3a;
 $accent: #004c21;
+$bg-dark-mode: rgb(34, 33, 33);
+$grey-dark-mode: rgba(66, 66, 66, 0.712);
+$white-text: #fff;
+$primary:rgb(0, 132, 255);
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.dark-mode {
+  background-color: $bg-dark-mode;
+  color: $white-text;
+  .card {
+    background-color: $grey-dark-mode;
+    box-shadow: none;
+  }
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 
 main {
   margin-top: 4rem;
@@ -57,7 +72,9 @@ h1 {
   letter-spacing: 1.2;
 }
 
-
+nav {
+  width: 90%;
+}
 
 nav a {
   margin-right: 10px;
@@ -67,6 +84,11 @@ nav a {
   &:hover {
     color: $accent;
   }
+}
+
+.justify-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .is-active {
