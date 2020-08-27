@@ -196,6 +196,19 @@ h1 {
 
 }
 
+.box {
+  margin: 3em 0;
+
+  h2 {
+    color: $accent;
+  }
+
+  p {
+    line-height: 1.5;
+    letter-spacing: .6px;
+  }
+}
+
 footer {
   height: 25em;
   background-color: $bg-accent;
