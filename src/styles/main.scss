@@ -33,6 +33,11 @@ $white-text: #fff;
 $primary:rgb(0, 132, 255);
 $bg-accent: #97DBD1;
 
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -40,6 +45,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
 }
 
 body.dark-mode {
@@ -67,6 +73,38 @@ header {
   display: flex;
   align-items: center;
   height: 8rem;
+
+  nav {
+    width: 90%;
+
+    .is-active {
+      color: $accent;
+      svg {
+        stroke: $accent !important;
+      }
+    }
+
+    .icon {
+      stroke: $main;
+      vertical-align: bottom;
+      margin-right: .2rem;
+    }
+
+    @include respond-to('sm') {
+      display: none;
+    }
+  }
+
+  nav a {
+    margin-right: 24px;
+    text-decoration: none;
+    color: $main;
+  
+    &:hover {
+      color: $accent;
+    }
+  }
+
 }
 
 h1 {
@@ -75,28 +113,12 @@ h1 {
   color: $main;
 }
 
-nav {
-  width: 90%;
-}
-
-nav a {
-  margin-right: 10px;
-  text-decoration: none;
-  color: $main;
-
-  &:hover {
-    color: $accent;
-  }
-}
-
 .justify-right {
   display: flex;
   justify-content: flex-end;
 }
 
-.is-active {
-  color: $accent;
-}
+
 
 .main-header {
   height: 20rem;
@@ -178,10 +200,39 @@ footer {
   height: 25em;
   background-color: $bg-accent;
   position: relative;
+  clear: both;
+  margin-right: -.5rem;
+  margin-left: -.5rem;
+
+  &:before,
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 75%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+
+  &:before {
+    top: 0;
+    transform: skewY(2deg);
+    transform-origin: 100% 0;
+  }
+  
+  &:after {
+    bottom: 0;
+    transform: skewY(0deg);
+    transform-origin: 100%;
+  }
 
   .f-container {
     text-align: center;
     padding-top: 2em;
+    margin-right: .5rem;
+    margin-left: .5rem;
     @include respond-to('lg') {
       max-width: 1280px;
     }
@@ -194,8 +245,54 @@ footer {
 
   .copyright {
     position: absolute;
-    bottom: 0em;
+    bottom: 3em;
     left: 1em;
     font-size: .8em;
+  }
+
+  nav {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $bg-accent;
+
+    .icon {
+      stroke: $main;
+      margin-top: -2px;
+      margin-right: 0px;
+      margin-bottom: 2px;
+      margin-left: 0px;
+      vertical-align: middle;
+    }
+
+    .is-active {
+      color: $white-text;
+      svg {
+        stroke: $white-text !important;
+      }
+    }
+ 
+    @include respond-to('sm') {
+      -webkit-box-align: center;
+      align-items: center;
+      display: flex;
+      padding: 0;
+    }
+  }
+
+  nav a {
+    text-decoration: none;
+    color: $main;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+
+  
+    &:hover {
+      color: $accent;
+    }
   }
 }
