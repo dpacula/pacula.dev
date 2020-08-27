@@ -26,11 +26,12 @@ $breakpoints: ('xs': 30em,
 }
 
 $main: #3a3a3a;
-$accent: #004c21;
-$bg-dark-mode: rgb(34, 33, 33);
-$grey-dark-mode: rgba(66, 66, 66, 0.712);
+$accent: #42B9A6;
+$bg-dark-mode: #43504E;
+$grey-dark-mode: #43504E;
 $white-text: #fff;
 $primary:rgb(0, 132, 255);
+$bg-accent: #97DBD1;
 
 body {
   margin: 0;
@@ -59,6 +60,7 @@ code {
 
 main {
   margin-top: 4rem;
+  margin-bottom: 12rem;
 }
 
 header {
@@ -70,6 +72,7 @@ header {
 h1 {
   line-height: 1.6;
   letter-spacing: 1.2;
+  color: $main;
 }
 
 nav {
@@ -109,7 +112,7 @@ nav a {
   @include respond-to('md') {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 30%;
     transform: translate(-50%,-50%);
   }
 }
@@ -141,7 +144,7 @@ nav a {
 
 .quick-sell-subc {
   padding: 10px 0px;
-  border-bottom: 1.25px solid rgba(138, 179, 138, 0.9);
+  border-bottom: 1.25px solid $bg-accent;
 
   ul {
     padding: 0;
@@ -154,18 +157,45 @@ nav a {
   }
 
   h3 {
+    color: $main;
     margin: 5px 0 0 0;
     letter-spacing: .05em;
     font-size: 1.5em;
   }
 
   &:hover {
-    background-color: rgba(138, 179, 138, 0.9);
-    border-bottom: 1.25px solid  rgba(138, 179, 138, 0.9);
+    background-color: $bg-accent;
+    border-bottom: 1.25px solid $bg-accent;
 
     h3 {
       color: $accent;
     }
   }
 
+}
+
+footer {
+  height: 25em;
+  background-color: $bg-accent;
+  position: relative;
+
+  .f-container {
+    text-align: center;
+    padding-top: 2em;
+    @include respond-to('lg') {
+      max-width: 1280px;
+    }
+
+    h1 {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 0em;
+    left: 1em;
+    font-size: .8em;
+  }
 }

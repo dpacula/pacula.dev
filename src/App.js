@@ -5,20 +5,28 @@ import Home from './pages/home';
 import Projects from './pages/projects';
 import Resume from './pages/resume';
 import Navigation from './components/navigation';
+import Footer from './components/footer';
 
 
 function App() {
   return (
-    <div>
-    <Navigation />
-    <main>
-      <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/about" component={About} />
-          <Route path="/projects" component={Projects} />
-          <Route path ="/resume" component={Resume} />
-      </Switch>
-    </main>
+  <div>
+    <div class="row">
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+        <Navigation />
+        <main>
+          <Switch>
+              <Route path="/" component={Home} exact />
+              <Route path="/about" component={About} />
+              <Route path="/projects" component={Projects} />
+              <Route path ="/resume" component={Resume} />
+          </Switch>
+        </main>
+        </div>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+    </div>
+    <Footer />
     </div>
   );
 }
