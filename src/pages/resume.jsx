@@ -14,7 +14,7 @@ function Resume() {
     </div>
     <div class="row">
       <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-          <div class="box" >
+          <div class="box">
             <h2>Objective.</h2>
             <p>
               Full Stack Web Developer with more than 7 years of experience in Web Development. Extensive knowledge in current technology

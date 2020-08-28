@@ -32,6 +32,7 @@ $grey-dark-mode: #43504E;
 $white-text: #fff;
 $primary:rgb(0, 132, 255);
 $bg-accent: #97DBD1;
+$bg-dark-accent: #129376;
 $bg-grey: #d7eeeb;
 
 html {
@@ -47,6 +48,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
+  overflow-x: hidden;
 }
 
 body.dark-mode {
@@ -55,6 +57,65 @@ body.dark-mode {
   .card {
     background-color: $grey-dark-mode;
     box-shadow: none;
+  }
+
+  header .wave .wave-absolute {
+    fill: $bg-dark-accent;
+  }
+
+  a {
+    color: white;
+  }
+
+  .is-active {
+    color: #43504E;
+
+    svg {
+      stroke: #43504E !important;
+    }
+  }
+  
+
+  h1 {
+    color: $bg-dark-accent;
+  }
+
+  .quick-sell-subc {
+    border-color: $bg-dark-accent;
+
+    h1, h2, h3 {
+      color: white;
+    }
+  }
+
+  .project-box .year-dev {
+    color: white;
+  }
+
+  footer {
+    background: #129376;
+
+    h1, a{
+      color: white;
+    }
+
+    svg {
+      stroke: white;
+    }
+  }
+
+  .project-box {
+    background-color: $bg-dark-accent;
+
+    h2, p, a {
+      color: white;
+    }
+  }
+
+  .resume-box, .box, .time-box {
+    h1, h2, span {
+      color: $bg-dark-accent;
+    }
   }
 }
 
@@ -72,7 +133,15 @@ main {
 
 .fill-current {
   height: 15rem;
+}
 
+.color-toggle {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
 }
 
 .blob-rotate {
@@ -231,6 +300,7 @@ h1 {
     li {
       margin: none;
       font-size: 1.1em;
+      line-height: 1.5;
 
       @include respond-to('sm') {
           font-size: .9em;
@@ -247,7 +317,6 @@ h1 {
   }
 
   &:hover {
-    background-color: $bg-accent;
     border-bottom: 1.25px solid $bg-accent;
 
     h3 {
@@ -408,8 +477,8 @@ h1 {
 }
 
 footer {
-  height: 25em;
-  background-color: $bg-accent;
+  height: 30em;
+  background-color: $bg-grey;
   position: relative;
   clear: both;
   margin-right: -.5rem;
@@ -440,10 +509,12 @@ footer {
   }
 
   .f-container {
+    position: relative;
     text-align: center;
     padding-top: 2em;
     margin-right: .5rem;
     margin-left: .5rem;
+    font-weight: 300;
     @include respond-to('lg') {
       max-width: 1280px;
     }
@@ -454,14 +525,51 @@ footer {
     }
   }
 
-  .copyright {
-    position: absolute;
-    bottom: 3em;
-    left: 1em;
-    font-size: .8em;
+  .f-button {
+    padding: .6rem 5rem;
+    border-radius: .25em;
+    background: linear-gradient(to top right, #b9cecb, $accent);
+    background-size: 200%;
+    transition: background-position .5s ease-out;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+
+    &:hover {
+      background-position: 100%;
+    }
   }
 
-  nav {
+  .footer-items {
+    position: relative;
+  }
+
+  .copyright {
+    font-size: .8em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .links {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    nav {
+      display: flex;
+      justify-content: right;
+    }
+  }
+
+  .disclaim {
+    height: 12em;
+    margin: 0;
+  }
+
+  .mobile-nav {
     display: none;
     overflow: hidden;
     position: fixed;
