@@ -296,6 +296,62 @@ h1 {
   }
 }
 
+.resume-box {
+  min-height: 100px;
+  border-right: 3px solid $bg-grey;
+  padding: 12px 0px;
+  margin: 12px 0px;
+
+  h2 {
+    margin: 3px;
+    padding: 0;
+  }
+
+  span {
+    font-weight: 500;
+    color: $accent;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0 5px 0 0;
+
+    li {
+      margin: none;
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+  }
+}
+
+.skills-box {
+  ul {
+    list-style-type: none;
+    padding: 0 5px 0 0;
+
+    li {
+      margin: none;
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+  }
+}
+
+.time-box {
+  min-height: 100px;
+  padding: 12px 0px;
+  margin: 12px 0px;
+  h2 {
+    margin: 3px;
+    padding: 0;
+  }
+
+  span {
+    font-weight: 500;
+    color: $accent;
+  }
+}
+
 footer {
   height: 25em;
   background-color: $bg-accent;
