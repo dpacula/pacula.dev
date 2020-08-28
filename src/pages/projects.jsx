@@ -1,8 +1,12 @@
 import React from 'react';
+import {Helmet} from 'react-helmet';
 
 function Projects() {
   return (
   <div class="row">
+    <Helmet>
+        <title>pacula.dev - Projects</title>
+      </Helmet>
     <div class="col-lg-6 col-md-6 col-xs-6">
         <div class="box">
           <h2>Professional Projects.</h2>

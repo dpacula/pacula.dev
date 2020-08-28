@@ -1,8 +1,12 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 function Resume() {
   return (
   <div>
+    <Helmet>
+        <title>pacula.dev - Resume</title>
+      </Helmet>
     <div class="row">
       <div class="col-lg-6 col-md-6 col-xs-6">
           <div class="box"><h1>Let's Talk Resume.</h1></div>

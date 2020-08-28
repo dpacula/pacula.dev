@@ -1,8 +1,12 @@
 import React from 'react';
+import { Helmet } from 'react-helmet'
 
 function About() {
   return (
     <div class="row">
+      <Helmet>
+        <title>pacula.dev - About</title>
+      </Helmet>
       <div class="col-lg-7 col-md-7 col-xs-7">
           <div class="box">
             <h2>About Me.</h2>

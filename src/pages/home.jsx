@@ -1,9 +1,13 @@
 import React from 'react';
 import me from '../assets/me.jpg';
+import { Helmet } from 'react-helmet';
 
 function Home() {
   return (
     <div class="row">
+      <Helmet>
+        <title>pacula.dev - Home</title>
+      </Helmet>
       <div class="col-lg-12 col-md-12 col-xs-12">
           <div class="row">
             <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 bottom">
