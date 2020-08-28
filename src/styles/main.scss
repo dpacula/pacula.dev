@@ -70,10 +70,40 @@ main {
   margin-bottom: 12rem;
 }
 
+.fill-current {
+  height: 15rem;
+
+}
+
+.blob-rotate {
+  -webkit-animation: rotate 50s linear infinite;
+  animation: rotate 50s linear infinite;
+}
+
 header {
   display: flex;
   align-items: center;
   height: 8rem;
+  position: relative;
+
+  .wave {
+    display: block;
+    z-index: -1;
+    position: absolute;
+
+    .wave-absolute {
+      position: absolute;
+      transform: scale(2.85);
+      z-index: -1;
+      top: -350px;
+      left: 20px;
+      fill: #d7eeeb;
+      display: block;
+      margin: auto;
+
+
+    }
+  }
 
   nav {
     width: 90%;
