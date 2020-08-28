@@ -12,8 +12,8 @@ function App() {
   return (
   <div>
     <div class="row">
-      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+      <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
+      <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
         <Navigation />
         <main>
           <Switch>
@@ -24,7 +24,7 @@ function App() {
           </Switch>
         </main>
         </div>
-      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+      <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
     </div>
     <Footer />
     </div>

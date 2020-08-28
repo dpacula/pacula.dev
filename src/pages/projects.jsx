@@ -7,7 +7,7 @@ function Projects() {
     <Helmet>
         <title>pacula.dev - Projects</title>
       </Helmet>
-    <div class="col-lg-6 col-md-6 col-xs-6">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="box">
           <h2>Professional Projects.</h2>
           <p>A small sample of some of the work I am involved in.</p>
@@ -17,7 +17,7 @@ function Projects() {
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="project-box">
-            <h2>SecureCare Provider Portal</h2><label class="year-dev">2018</label>
+            <h2>SecureCare Portal</h2><label class="year-dev">2018</label>
             <p>Admin and Provider tool allowing healthcare management, business tools, and other services.</p>
             <p>Angular, Node.JS, MySQL, AWS</p>
             <p>
@@ -55,7 +55,7 @@ function Projects() {
           <div class="project-box">
             <h2>GHX ePay</h2><label class="year-dev">2016</label>
             <p>The first payment solution to address the financial goals of both healthcare providers and suppliers in one unified platform.</p>
-            <p>.NET, .NET MVC, WebForms, SQL Server, IIS</p>
+            <p>.NET & MVC, WebForms, T-SQL</p>
             <p>
               <a href="https://ghx.com/">Website 
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -87,7 +87,7 @@ function Projects() {
         </div>
       </div>
     </div>
-    <div class="col-lg-6 col-md-6 col-xs-6">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="box">
           <h2>Personal Projects.</h2>
           <p>A small sample of some of the work I've done on the side.</p>
@@ -131,7 +131,7 @@ function Projects() {
             </p>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="project-box">
             <h2>SerweWX</h2><label class="year-dev">2019</label>
             <p>Website created to monitor personal weather station. Quick access to poll data from the weather station</p>

@@ -7,7 +7,7 @@ function About() {
       <Helmet>
         <title>pacula.dev - About</title>
       </Helmet>
-      <div class="col-lg-7 col-md-7 col-xs-7">
+      <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
           <div class="box">
             <h2>About Me.</h2>
             <p>I'm Derek Pacula. I am a Full Stack Developer for a small local company called Jelecos. 

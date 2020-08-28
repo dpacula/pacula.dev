@@ -8,12 +8,12 @@ function Resume() {
         <title>pacula.dev - Resume</title>
       </Helmet>
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-xs-6">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="box"><h1>Let's Talk Resume.</h1></div>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-7 col-md-7 col-xs-7">
+      <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
           <div class="box" >
             <h2>Objective.</h2>
             <p>
