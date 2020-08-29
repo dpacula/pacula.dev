@@ -11,7 +11,7 @@ function Home() {
       <div class="col-lg-12 col-md-12 col-xs-12">
           <div class="row">
             <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 bottom">
-              <div class="main-header"><h1>Hi, I’m Derek. <br></br> I’m an Full Stack Web Developer from Nebraska. Experinced in modern web development.</h1></div>
+              <div class="main-header"><h1>Hi, I’m Derek. <br></br>A Full Stack Web Developer from Nebraska. Experinced in modern web development.</h1></div>
             </div>
             <div class="col-lg-4 top">
               <div><img class="main-header-img" src={me} alt="me"></img></div>

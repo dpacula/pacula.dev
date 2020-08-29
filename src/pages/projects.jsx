@@ -10,7 +10,7 @@ function Projects() {
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="box">
           <h2>Professional Projects.</h2>
-          <p>A small sample of some of the work I am involved in.</p>
+          <p>Just some of the work I am involved in.</p>
         </div>
     </div>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -90,7 +90,7 @@ function Projects() {
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="box">
           <h2>Personal Projects.</h2>
-          <p>A small sample of some of the work I've done on the side.</p>
+          <p>Just some of the work I've done on the side.</p>
         </div>
     </div>
   
