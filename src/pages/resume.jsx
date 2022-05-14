@@ -19,10 +19,10 @@ function Resume() {
     <div class="row">
       <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
           <div class="box">
-            <h2>Objective.</h2>
+            <h2>Summary.</h2>
             <p>
-              Full Stack Web Developer with more than 5 years of experience in Web Development. Extensive knowledge in current technology
-               stacks and leading proects.
+              Application Web Developer with 7+ years of experience with a wide arange of skills including Angular, Vue, Node.JS, SQL Technologies, and AWS. 
+              Trusted person who has lead several projects start to finish, entrusted to listen to client requirements and feedback and helped fellow employees bring up their skills.
             </p>
           </div>
       </div>
@@ -35,9 +35,10 @@ function Resume() {
         <div class="row">
           <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
             <div class="resume-box">
-              <h2>Full Stack Web Developer</h2>
-              <span>Jelecos</span>
+              <h2>Senior Developer | DevOps Enginner</h2>
+              <span>Opti9 (Formerly Jelecos)</span>
               <ul>
+                <li>Create and Develop custom infrastructure for automated application and infrastructure deployment</li>
                 <li>Developing custom web applications including .NET, C# and serverless web applications using Javascript, Angular, Vue, Node.JS and AWS technologies</li>
                 <li>Leading product demos to clients and board members</li>
                 <li>Lead on-site client meetings to understand and articulate wants and desires</li>
