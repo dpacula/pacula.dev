@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import dpResume2020 from '../assets/dpResume2020.pdf'
+import dpResume2022 from '../assets/dpResume2022.pdf'
 
 function Resume() {
   return (
@@ -12,7 +12,7 @@ function Resume() {
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="box">
             <h1>Let's Talk Resume.</h1>
-            <a aria-label="Link to Resume" class="box-a-button" href={dpResume2020}>Download</a>
+            <a aria-label="Link to Resume" class="box-a-button" href={dpResume2022}>Download</a>
           </div>
       </div>
     </div>
