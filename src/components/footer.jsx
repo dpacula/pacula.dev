@@ -132,11 +132,7 @@ function Footer() {
                   <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
                 </svg>
               </a>
-              <a
-                rel="me"
-                target="_blank"
-                href="https://mastodon.social/@dpacula"
-              >
+              <a rel="me" href="https://mastodon.social/@dpacula">Mastodon</a>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-brand-mastodon"
